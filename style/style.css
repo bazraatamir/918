@@ -1,0 +1,78 @@
+header {
+  width: 100%;
+  height: 80px;
+  background-color: gray;
+}
+
+header .mobile-menu {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .mobile-menu .logo {
+  width: 10%;
+}
+
+header .mobile-menu .check .bars {
+  width: 40px;
+  height: 30px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .mobile-menu .check .bars .line {
+  height: 3px;
+  width: 30px;
+  background-color: #000;
+}
+
+header .mobile-menu .check .bars:before {
+  content: '';
+  height: 3px;
+  width: 30px;
+  background-color: #000;
+  position: absolute;
+  top: 5px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+header .mobile-menu .check .bars:after {
+  content: '';
+  height: 3px;
+  width: 30px;
+  background-color: #000;
+  position: absolute;
+  bottom: 5px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+header .mobile-menu:check ~ .line::before {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=style.css.map */
