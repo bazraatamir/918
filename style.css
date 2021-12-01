@@ -1,51 +1,44 @@
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
-.etseg{ 
-    width: 100vw;
-    height:500px;
+nav{
+    width: 100%;
+    height: 61px;
+    background-color: #1d1d1d;
+    display: flex;
+    justify-content: space-between;
+}
+nav .logo{
+    width: 20%;
+    height: 100%;
     
 }
-.child-1{
-    width: 30vw;
-    height: 30%;
-    float: left;
-}
-.child-1 img{
-    width: 100%;
+nav .logo img{
+    width: 90%;
     height: 100%;
     object-fit: contain;
+    margin-left: 20px;
 }
-.child-2{
-    width: 69%;
-    height: 20%;
-    float: right;
+.menu{
+    width: 20%;
+    height: 100%;
+    
+    display: flex;
+    
+}
 
+.desc-menu{
+    width:33.3%;
+    height: 100%;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   border-left: 1px solid #999;
 }
-.clr{
-    clear: both;
-}
-.big-text{
-    width: 100%;
-    background-color: chartreuse;
-    margin: 1px;
-}
-.big-text h1{
-    text-transform: uppercase;
-    font-size: 20px;
-    padding: 1em;
-}
-.second-two{
-    width: 100vw;
-
-}
-.second-two .pictur{
-    width: 30%;
-    float:right;
-}
-.second-two .pictur img{
-    width: 100%;
-    object-fit: contain;
+.desc-menu i{
+    color: #999;
+   font-size: 18px;
+   
 }
